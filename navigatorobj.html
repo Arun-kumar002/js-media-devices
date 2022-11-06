@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter the city">
+    <button>connect place</button>
+    <script>
+       //platform
+        // console.log(window.navigator.platform);
+        // if(window.navigator.platform="win32"){
+        //     btn.innerHTML="download for windows"
+        // }
+        // else if(window.navigator.platform="x86_64"){
+        //     btn.innerHTML="download for linux"
+        // }
+        // else if(window.navigator.platform="mac"){
+        //     btn.innerHTML="download for mac"
+        // }
+        // else{
+        //     btn.innerHTML="not supported"
+        // }
+        // switch(window.navigator.platform){
+        //     case "win32":
+        //         btn.innerHTML=("download for windows");
+        //         break;
+
+        // }
+       //cliboard like cdn copy
+        // let input=document.querySelector("input");
+        // let btn=document.querySelector("button");
+        // btn.addEventListener("click",e=>{
+        //     input.focus();
+        //     let text=input.value;
+        //     input.style.background="#efefec";
+        //     window.navigator.clipboard.writeText(text);
+        //     btn.innerHTML="copied"
+
+        // })
+
+        //connection
+        let input=document.querySelector("input");
+        input.addEventListener("keyup ",e=>{
+            e.preventDefault();
+            let value=e.target.value;
+            if (e.key==="Enter"){
+                getposition(value)
+            }
+        })
+
+        function getposition(city){
+            window.navigator.geolocation.getCurrentPosition(({coords})=>{
+                let{longitude,ladiude}=coords;
+                let url=`https://www.google.com/maps/place/${city}/@${ladiude},${longitude}`;
+                // console.log(url);
+                window.location.assign(url);
+            })
+        }
+        // getposition()
+    </script>
+</body>
+</html>

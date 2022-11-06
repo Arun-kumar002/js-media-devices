@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video ></video>
+    <button id="call">call</button>
+    <button id="share">sharescreen</button>
+    <script>
+        //media device
+//         let video=document.querySelector("video");
+//         let btn=document.querySelector("#call");
+    
+//         let screenbtn=document.querySelector("#share")
+// function  getcamera(){
+//         window.navigator.mediaDevices.getUserMedia({audio:false,video:{height:400,width:800},})
+//         .then(stream=>{
+//             video.srcObject=stream;
+//             video.onloadeddata=()=>{
+//                 video.play();
+//             };
+//         })
+//         .catch(err=>console.log(err));
+//     }
+//   btn.addEventListener("click",getcamera)
+
+//   function sharescreen(){
+//     window.navigator.mediaDevices.getDisplayMedia().then(display=>{
+//         console.log(display);
+//     }).catch(err=>console.log(err));
+//   }
+//   screenbtn.addEventListener("click",sharescreen)
+//online
+if(window.navigator.onLine){
+    console.log("arun is online😜😍");
+}
+else{
+    console.log("ofline😍");
+}
+    </script>
+</body>
+</html>

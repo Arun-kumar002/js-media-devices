@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <footer>
+        <button>co0kie</button>
+    </footer>
+    <script>
+        // let test=document.cookie="user=arun";
+        // console.log(test);
+
+
+        // const http=require("http");
+        // http.createServer((req,res)=>{
+        //     res.setHeader("set-cookie","user=name")
+        // })
+    let button=document.querySelector("button");
+    button.addEventListener("click",e=>{
+        document.cookie="user=arun"
+    });
+    document.cookie="user=arun"
+    let get=get("user=arun");
+    let decodedCookie = decodeURIComponent(document.cookie);
+    console.log(decodedCookie);
+    console.log(get);
+    
+    </script>
+</body>
+</html>

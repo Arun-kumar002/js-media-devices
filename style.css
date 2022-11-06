@@ -1,0 +1,151 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #fff;
+}
+#header_block{
+    height: 50px;
+    width: 100%;
+    background: #111;
+    border-bottom: 3px solid yellow;
+}
+#header_block > article{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul
+{
+    width: 100px;
+   list-style: none;
+   margin: 15px 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+ul> li >a{
+    text-decoration: none;
+    background-color: yellow;
+    color: #111;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+   
+}
+ul> li >a:empty{
+    background-color: #111;
+}
+#form
+{
+    height: 70vh;
+    width: 100%;
+    background: #efefec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form > article
+{
+    width: 300px;
+    height: 250px;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form > article > form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#form > article > form > div
+{
+    margin: 10px;
+   color: yellow;
+}
+label
+{
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+#form > article > form > div>button
+{
+    border: none;
+    background: yellow;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul{
+    margin-right: 150px;
+}
+input{
+    padding: 2px;
+    border-radius: 3px;
+}
+input:focus{
+    background:linear-gradient(rgba(255, 166, 0, 0.507),rgba(0, 128, 0, 0.295));
+}
+h2{
+    color: yellow;
+    font-weight: bold;
+}
+#profile
+{
+    color: yellow;
+    margin-right: 20px;
+    font-weight: 600px;
+    text-transform: uppercase;
+}
+#profile_section
+{
+    height: 300px;
+    width: 100%;
+    background-color: #efefef;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#profile_section > h1
+{
+    font-weight: 800;
+    font-size: 20px;
+    color: yellow;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#profile_section{
+    height: 300px;
+    width: 100%;
+    background-color: #efefec;
+    display: none;
+}
+#profile_section > div 
+{
+    height: 150px;
+    width: 150px;
+    background: url("./WhatsApp\ Image\ 2022-07-02\ at\ 4.15.31\ PM.jpeg") no-repeat;
+    background-size: contain;
+}
+p{
+    font-size: 15px;
+    color:#111;
+    font-weight: 600;
+}
